@@ -15,7 +15,7 @@
       </ul>
     </nav>
   </header>
-  <div class="container task-list">
+  <div class="container task-list slide-in-element-task-list">
     <h2>Task List</h2>
     <ul>
       {% for task in tasks %}
@@ -28,5 +28,8 @@
       {% endfor %}
     </ul>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/animations.js') }}"></script>
 </body>
 </html>

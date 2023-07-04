@@ -15,12 +15,15 @@
       </ul>
     </nav>
   </header>
-  <div class="container">
+  <div class="container fade-in-element-add-task slide-in-element-add-task">
     <h2>Add Task</h2>
     <form method="post" action="{{ url_for('add_task') }}">
       <input type="text" name="task" placeholder="Enter task">
       <button type="submit">Add</button>
     </form>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/animations.js') }}"></script>
 </body>
 </html>
